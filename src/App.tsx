@@ -1,5 +1,3 @@
-/** @jsxImportSource @emotion/react */
-
 import { Interpolation, Theme, Global } from '@emotion/react';
 import { useState } from 'react';
 import endecoder from './utils/endecoder';
