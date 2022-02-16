@@ -7,6 +7,7 @@ import endecoder from './utils/endecoder';
 const initText = `真理像光一样，它很难谦逊；而且要它对谁谦逊呢？对它本身吗？Verum index sui et falsi［真理是检验它自身和谬误的试金石］。那么是对谬误吗？
 如果谦逊是探讨的特征，那么，这与其说是害怕谬误的标志，不如说是害怕真理的标志。谦逊是使我寸步难行的绊脚石。它就是规定在探讨时要对得出结论感到恐惧，它是一种对付真理的预防剂。
 ——卡尔·马克思《评普鲁士最近的书报检查令》(Karl Marx, Prussian Censorship)`;
+const sm = '@media (max-width: 576px)';
 
 function App() {
   const [encText, setEncText] = useState(initText);
@@ -20,6 +21,7 @@ function App() {
     borderStyle: 'hidden',
   };
   const textAreaDivCss: Interpolation<Theme> = {
+    [sm]: { height: '40%' },
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -47,7 +49,7 @@ function App() {
         css={{
           display: 'flex',
           flexGrow: 5,
-          flexWrap: 'wrap',
+          [sm]: { flexDirection: 'column', alignItems: 'center' },
           alignItems: 'stretch',
           justifyContent: 'center',
           height: window.innerHeight * 0.5,
