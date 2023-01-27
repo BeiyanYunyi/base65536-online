@@ -1,3 +1,5 @@
 .yarn
 node_modules
-.vscode
+public
+.pnp*
+pnpm-lock.yaml

@@ -1,11 +1,10 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import solidPlugin from 'vite-plugin-solid';
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
-      jsxImportSource: '@emotion/react',
-    }),
-  ],
+  plugins: [solidPlugin(), vanillaExtractPlugin()],
+  build: {
+    target: 'esnext',
+  },
 });
