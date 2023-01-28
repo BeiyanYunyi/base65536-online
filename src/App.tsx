@@ -37,8 +37,8 @@ const styles = style9.create({
   html: {
     fontFamily:
       '-apple-system,BlinkMacSystemFont,"Microsoft Yahei UI","Microsoft Yahei","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
-    '-webkit-font-smoothing': 'antialiased',
-    '-moz-osx-font-smoothing': 'grayscale',
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale',
   },
 });
 
