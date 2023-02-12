@@ -1,13 +1,14 @@
 import { createSignal } from 'solid-js';
 import {
-  alignCenter,
+  alignCenterStyle,
   div1Style,
+  globalsStyle,
   h1Style,
-  m1,
-  noDecoration,
-  textAreaCss,
-  textAreaDivCss,
-} from './App.css';
+  m1Style,
+  noDecorationStyle,
+  textAreaDivStyle,
+  textAreaStyle,
+} from './styles';
 import endecoder from './utils/endecoder';
 
 const initText = `真理像光一样，它很难谦逊；而且要它对谁谦逊呢？对它本身吗？Verum index sui et falsi［真理是检验它自身和谬误的试金石］。那么是对谬误吗？
@@ -18,12 +19,12 @@ const App = () => {
   const [encText, setEncText] = createSignal(initText);
   const [decText, setDecText] = createSignal(endecoder.encode(initText));
   return (
-    <div>
+    <div class={globalsStyle}>
       <h1 class={h1Style}>Base65536 en/decoder</h1>
       <div class={div1Style}>
-        <div class={textAreaDivCss}>
+        <div class={textAreaDivStyle}>
           <textarea
-            class={textAreaCss}
+            class={textAreaStyle}
             value={encText()}
             onInput={(e) => {
               setEncText(e.currentTarget.value);
@@ -31,10 +32,10 @@ const App = () => {
             }}
           />
         </div>
-        <div class={m1}>👈full auto👉</div>
-        <div class={textAreaDivCss}>
+        <div class={m1Style}>👈full auto👉</div>
+        <div class={textAreaDivStyle}>
           <textarea
-            class={textAreaCss}
+            class={textAreaStyle}
             value={decText()}
             onInput={(e) => {
               setDecText(e.currentTarget.value);
@@ -43,8 +44,8 @@ const App = () => {
           />
         </div>
       </div>
-      <a class={noDecoration} href="https://github.com/lixiang810/base65536-online">
-        <p class={alignCenter}>Star me on GitHub</p>
+      <a class={noDecorationStyle} href="https://github.com/lixiang810/base65536-online">
+        <p class={alignCenterStyle}>Star me on GitHub</p>
       </a>
     </div>
   );
