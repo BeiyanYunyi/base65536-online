@@ -2,7 +2,6 @@ import { createSignal } from 'solid-js';
 import {
   alignCenterStyle,
   div1Style,
-  globalsStyle,
   h1Style,
   m1Style,
   noDecorationStyle,
@@ -19,7 +18,7 @@ const App = () => {
   const [encText, setEncText] = createSignal(initText);
   const [decText, setDecText] = createSignal(endecoder.encode(initText));
   return (
-    <div class={globalsStyle}>
+    <div>
       <h1 class={h1Style}>Base65536 en/decoder</h1>
       <div class={div1Style}>
         <div class={textAreaDivStyle}>

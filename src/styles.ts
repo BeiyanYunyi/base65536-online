@@ -3,12 +3,14 @@ import renderer from './felaRenderer';
 const fontFamily =
   '-apple-system,BlinkMacSystemFont,"Microsoft Yahei UI","Microsoft Yahei","Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
 
-const globals = () => ({
-  fontFamily,
-  WebkitFontSmoothing: 'antialiased',
-  MozOsxFontSmoothing: 'grayscale',
-});
-export const globalsStyle = renderer.renderRule(globals, {});
+renderer.renderStatic(
+  {
+    fontFamily,
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale',
+  },
+  'html',
+);
 
 const h1 = () => ({ textAlign: 'center' });
 export const h1Style = renderer.renderRule(h1, {});
