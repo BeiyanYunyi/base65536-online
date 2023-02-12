@@ -20,7 +20,7 @@ specifiers:
   eslint-plugin-solid: ^0.9.2
   prettier: ^2.8.3
   solid-js: ^1.6.9
-  style9: ^0.16.1
+  style9: ^0.17.0
   typescript: ^4.9.4
   typescript-plugin-css-modules: ^4.1.1
   vite: ^4.0.4
@@ -31,7 +31,7 @@ dependencies:
   '@vanilla-extract/sprinkles': 1.5.1_@vanilla-extract+css@1.9.3
   base65536: 4.0.2
   solid-js: 1.6.9
-  style9: 0.16.1
+  style9: 0.17.0
 
 devDependencies:
   '@types/babel__core': 7.1.20
@@ -3182,8 +3182,8 @@ packages:
       inline-style-parser: 0.1.1
     dev: true
 
-  /style9/0.16.1:
-    resolution: {integrity: sha512-0N+CV/NuMqhORyXZiou4E7jrTNnGa14t4yP0dYV0e2HX0JWoH1i85bB8ah5VoqRUXImCCbWOHWZ2SszFNdfFnw==}
+  /style9/0.17.0:
+    resolution: {integrity: sha512-7NhAcYegwFMoY3Sa8dbuu1+QXEHny+oWfjtzth2QLhAs72J5tYluyweVuYeYAabvRLtSSMe5ce0UAXftTEaCzg==}
     engines: {node: '>=14'}
     dependencies:
       '@babel/core': 7.20.7

@@ -36,6 +36,6 @@
     "@vanilla-extract/sprinkles": "^1.5.1",
     "base65536": "^4.0.2",
     "solid-js": "^1.6.9",
-    "style9": "^0.16.1"
+    "style9": "^0.17.0"
   }
 }
